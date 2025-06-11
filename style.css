@@ -1,4 +1,4 @@
- :root {
+:root {
   --green: hsl(75, 94%, 57%);
   --white: hsl(0, 0%, 100%);
   --grey: hsl(0, 0%, 20%);
@@ -17,10 +17,9 @@ body {
   background-color: var(--off-black);
   color: var(--white);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* Updated: Simpler centering with Grid (Marzia's suggestion) */
+  display: grid;
+  place-items: center;
   padding: 1.5rem;
 }
 
@@ -94,6 +93,4 @@ body {
   .profile-card {
     padding: 1.5rem;
   }
-} 
-
-
+}
